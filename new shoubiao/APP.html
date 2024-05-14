@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0" user-scalable=no/>
+		<title>wx</title>
+		
+		<style type="text/css">
+			
+			body{
+			background-image:url(img/背景4.jpg);	
+			background-size: cover;
+	        background-position: top;
+	        overflow-x: hidden;
+	        overflow-y: hidden;
+	        flex: 1;
+				display: flex;
+				width:96vw ;
+				height:104vh;               
+			    text-align: center;
+			    align-items: center;
+			    margin-top:0vh;
+			    
+			    /*border: dashed;*/
+			    }
+             .tou{
+				background-clip:content-box ;
+				background-color: green;
+				border:1px solid green;
+				background-color:rgba(0,152,50,0.7);
+				width:96vw ;
+				height:5vh;
+				display:flex;
+				justify-content: center;
+				flex-direction:row;
+				align-items: center;
+				align-content: center;
+				font-size: 5vw;			
+				
+			}			    
+			header{		
+				background-clip:content-box ;
+				width:96vw ;
+				height:18vh;
+				display:flex;
+				justify-content: center;
+				flex-direction:row;
+				align-items: flex-start;
+				margin-right: 1vw;
+				margin-top: 3.5vh;
+				
+			}
+			.pg{
+				background-clip: content-box;
+				background-color:rgba(0,152,50,0.1);
+				margin-right: 3.5vw;
+				width:29vw ;
+				height:16vh;
+				border: 2px solid green;
+				/*border-style: solid;*/
+				border-color:  darkgreen;
+				border-radius: 7%;
+				display:flex;
+				flex-direction: row;
+				justify-content: flex-start;
+				align-items: center;
+				align-content: center;
+				animation:pg-in-out 4s ease-in-out infinite;
+			}
+			@keyframes pg-in-out{
+				0%{transform: scale(1)}
+				50%{transform: scale(1.06)}
+				100%{transform: scale(1)}
+			}
+			.az{
+				background-clip: content-box;
+				background-color:rgba(0,152,50,0.1);
+				margin-right: 3.5vw;
+				width:29vw ;
+				height:16vh;
+				border: 2px solid green;
+				/*border-style: solid;*/
+				border-color:  darkgreen;
+				border-radius: 7%;
+				display:flex;
+				flex-direction: row;
+				justify-content: flex-start;
+				align-items: center;
+				align-content: center;
+			animation:pg-in-out 4s ease-in-out infinite;
+			animation-delay: 1.5s;
+			}
+			@keyframes pg-in-out{
+				0%{transform: scale(1)}
+				50%{transform: scale(1.06)}
+				100%{transform: scale(1)}
+			}
+			.hw{
+				background-clip: content-box;
+				background-color:rgba(0,152,50,0.1);
+				width:29vw ;
+				height:16vh;
+				border: 2px solid green;
+				/*border-style: solid;*/
+				border-color:  darkgreen;
+				border-radius: 7%;
+				display:flex;
+				flex-direction: row;
+				justify-content: flex-start;
+				align-items: center;
+				align-content: center;
+				animation:pg-in-out 4s ease-in-out infinite;
+			}
+			@keyframes pg-in-out{
+				0%{transform: scale(1)}
+				50%{transform: scale(1.06)}
+				100%{transform: scale(1)}
+			}
+			.imgg{
+				background-clip: content-box;
+				width:12vw ;
+				height:8vh;
+				
+				/*padding-top:1vh ;*/
+				/*border: dashed;*/
+				display:flex;
+				flex-direction: column;
+				justify-content: center;
+			}
+			p{
+				background-clip: content-box;
+				font-size:3vw ;
+				margin: 1vh;
+				margin-bottom: 0;
+                padding-top:1vh ;				
+			}
+			a{
+				text-decoration: none;
+				color: #000000;
+			}
+			.pgm{
+				background-clip: content-box;
+				width:30vw ;
+				height:16vh;
+				display:flex;
+				justify-content: center;
+				align-items: center;
+		        flex-direction: column;
+		        /*行内竖向排列*/
+			}
+			.azm{
+			    background-clip: content-box;
+				width:30vw ;
+				height:16vh;
+				display:flex;
+				justify-content:  center;
+				align-items: center;
+				flex-direction: column;
+		        /*行内竖向排列*/
+			}
+			.hwm{
+				background-clip: content-box;
+				margin-top: 0.2vh;
+				width:30vw ;
+				height:16vh;
+				display:flex;
+				justify-content:  center;
+				align-items: center;
+				flex-direction: column;
+		        /*行内竖向排列*/
+			}
+			article{
+				background-clip:content-box ;
+				background-color:rgba(0,152,50,0.1);
+				border: 2px solid green;
+				border-style: outset;
+				border-radius: 7%;
+				width:96vw ;
+				height:8.5vh;
+				justify-content: center;
+				flex-direction:row;
+				align-items: center;		
+			/*animation:pg-in-out 4s ease-in-out infinite;*/
+			}
+			/*@keyframes pg-in-out{
+				0%{transform: scale(1)}
+				50%{transform: scale(1.01)}
+				100%{transform: scale(1)}
+			}*/
+			.p1{
+				background-clip:content-box ;
+				font: "宋体";
+				font-size: 4vw;
+				color: #FF0000;
+			/*animation:pg-in-out 4s ease-in-out infinite;*/
+			}
+			/*@keyframes pg-in-out{
+				0%{transform: scale(1)}
+				50%{transform: scale(1.01)}
+				100%{transform: scale(1)}
+			}*/
+			
+			.yin22{				
+			    background-clip:content-box ;
+			    background-color:rgba(0,152,50,0.1);
+				border: 2px solid green;
+				border-style: outset;
+				border-radius: 7%;
+				width:96vw ;
+				height:8.5vh;
+				justify-content: center;
+				flex-direction:row;
+				align-items: center;
+				margin-top: 1vh;
+			/*animation:pg-in-out 4s ease-in-out infinite;
+			animation-delay: 2s;*/
+			}
+			/*@keyframes pg-in-out{
+				0%{transform: scale(1)}
+				50%{transform: scale(1.01)}
+				100%{transform: scale(1)}
+			}*/
+			.p2{
+				background-clip:content-box ;
+				font: "宋体";
+				font-size: 4vw;
+			/*animation:pg-in-out 4s ease-in-out infinite;
+			animation-delay: 2s;*/
+			}
+			/*@keyframes pg-in-out{
+				0%{transform: scale(1)}
+				50%{transform: scale(1.01)}
+				100%{transform: scale(1)}
+			}*/
+			#jiantou{
+				margin-top: 5vh;
+				background-clip: content-box;
+				width:20vw ;
+				height:20vh;
+				margin-top:3vh;
+				/*padding-top:1vh ;*/
+				/*border: dashed;*/
+				display:flex;
+				flex-direction: column;
+				justify-content: center;
+				transition: transform 0.5s ease-in-out;
+				 animation: move 2s infinite;
+				 -webkit-animation: move 2s infinite ;
+				 
+				 
+			}		
+			@keyframes move {
+				50% {
+
+                    transform: translateY(1.1vh);
+				    }
+                           }
+             @-webkit-keyframes mymove/* Safari and Chrome */
+
+            {
+
+                50% {
+
+                    transform: translateY(4vh);
+
+                }
+			}
+			.zzlj{
+				background-clip:content-box ;
+				background-color:rgba(0,152,50,0.1);
+				margin-top: 4vh;
+				border: 2px solid green;
+				border-radius: 6%;
+				width:96vw ;
+				height:18vh;
+				display:flex;
+				justify-content: center;
+				align-items: center;
+				flex-direction: column;
+				flex-direction: column;
+				margin-bottom: 1.9vh;
+			
+			}
+		    .zlj{
+		    	font-size: 3.9vw;
+		    	margin-bottom: 1vh;
+		    	color: red;
+		    	display: flex;
+				justify-content: center;
+				align-items: center;
+				flex-direction: column;
+				flex-direction:row;
+				margin-bottom: 2.4vh;
+		    animation:pg-in-out 4s ease-in-out infinite;
+			}
+			@keyframes pg-in-out{
+				0%{transform: scale(1)}
+				50%{transform: scale(1.02)}
+				100%{transform: scale(1)}
+			}
+		    .yin2{
+		    	font-size: 7vw;
+		    	display: flex;
+				justify-content: center;
+				align-items: center;
+				flex-direction: column;
+				flex-direction:row;
+				margin-bottom: 2vh;
+		    } 
+		    .yin3{
+		    	font-size: 5vw;
+		    	color: #008000;
+		    	display: flex;
+				justify-content: center;
+				align-items: center;
+				flex-direction: column;
+				flex-direction:row;
+				margin-bottom: 3vh;				
+				animation:pg-in-out 4s ease-in-out infinite;
+				animation-delay: 2s;
+		    }
+		    @keyframes pg-in-out{
+				0%{transform: scale(1)}
+				50%{transform: scale(1.02)}
+				100%{transform: scale(1)}
+			}
+		    .zhuyao{
+		    	background-clip:border-box;
+				width:96vw ;
+				height:106vh;
+				/*border: 1px solid green;*/
+				/*border-style: outset;*/
+				display:flex;
+				justify-content:flex-start;
+				flex-direction: column;
+				align-items: center;
+		    }
+		    .toubu{
+		    	background-clip:content-box ;
+				background-color: green;
+				border-bottom:2px solid green;
+				background-color:rgba(0,152,50,0.57);
+				width:101vw ;
+				height:5vh;
+				display:flex;
+				justify-content: center;
+				align-content: center;
+				font-size: 5vw;	
+				margin-top: 1vh;		
+		    }
+		    .dibu{
+		    	background-clip:content-box ;
+				background-color: green;
+				border-top:2px solid green;
+				background-color:rgba(0,152,50,0.57);
+				width:101vw ;
+				height:5.1vh;
+				margin-top: 1.8vh;
+				display:flex;
+				justify-content:center;
+				align-content: center;
+				
+				font-size: 5vw;
+		    }
+		    .tb{
+				opacity: 0.9;
+				font-size: 5vw;
+				margin-top:0.8vh ;
+				margin-left:0.3vw ;
+			}
+			.db{
+				opacity: 0.9; 
+				font-size: 5vw;	
+				margin-top:0.75vh ;			
+			}
+    </style>
+	</head>
+	<body>
+		<div class="zhuyao">
+			<div class="toubu"><a href="zhuye.html" class="tb" >- 返回点这里 -</a></div>
+		<header>
+			<a href="pglj.html"><div class="pg"><div class="pgm"><img src="img/苹果.png"class="imgg"/><p>苹果教程<br />点这里</p></div></div></a>
+			<a href="azlj.html"><div class="az"><div class="azm"><img src="img/安卓.png"class="imgg"/><p>安卓教程<br />点这里</p></div></div></a>
+			<a href="hwlj.html"><div class="hw"><div class="hwm"><img src="img/华为.png"class="imgg" style="width: 14vw;height: 7.5vh;"/><p>华为教程<br />点这里</p></div></div></a>
+		</header>
+		
+		<article>
+				<p class="p1">第一步：根据自己的手机的系统点击上方相应图标查看安装教程</p>
+		</article>
+		
+		<div class="yin22">
+			   <p class="p2">第二步：点击下方链接根据教程操作下载并安装APP到手机上</p>
+		</div>
+			
+		<div id="jiantou">
+			<img src="img/箭头2.png" style="filter: drop-shadow(1px 1px 1px black);"/>
+		</div>
+		<footer>
+			<div class="zzlj">
+				<p class="yin2">点击下方链接跳转下载</p>
+				<a href="http://m.3673.com/down/60433.html" class="zlj">http://m.3673.com/down/60433.html</a>
+				<a href="houxu.html"  class="yin3">已下载？点我查看后续连接教程</a>
+			</div>
+		</footer>
+		<div class="dibu"><div class="db">- ∧ -</div></div>
+		</div>
+	</body>
+</html> 
